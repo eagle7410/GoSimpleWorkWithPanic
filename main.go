@@ -12,17 +12,16 @@ func main() {
 		}
 	}()
 
-
 	fmt.Println(division(12, 3))
 	fmt.Println(division(12, 0))
 
 	panic("O my Good. Panic")
 }
 
-func division (base, part int) int {
+func division(base, part int) int {
 	if part == 0 {
 		panic("Division by zero")
 	}
 
-	return  base / part
+	return base / part
 }
